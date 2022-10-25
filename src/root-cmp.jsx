@@ -5,6 +5,7 @@ import { Sidebar } from './cmps/Sidebar'
 import { BoardPage } from './pages/board-page'
 import { Route, Routes } from 'react-router-dom'
 import { TeamPage } from './pages/team-page'
+import { ContactPage } from './pages/contact-page'
 
 export const RootCmp = () => {
   const [theme, colorMode] = useMode()
@@ -20,6 +21,7 @@ export const RootCmp = () => {
             <Routes>
               <Route path="/" element={<BoardPage />} />
               <Route path="/team" element={<TeamPage />} />
+              <Route path="/contacts" element={<ContactPage />} />
             </Routes>
           </main>
         </div>

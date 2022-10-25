@@ -38,7 +38,7 @@ export const TeamPage = () => {
       renderCell: ({ row: { access } }) => {
         return (
           <Box
-            width="60%"
+            width="75%"
             m="0 auto"
             p="5px"
             display="flex"
@@ -66,7 +66,7 @@ export const TeamPage = () => {
         <Header title="MANAGE TEAM" subtitle="Manging the team members" />
       </Box>
       <Box
-        m="40px 0 0 0"
+        m="10px 0 0 0"
         height="75vh"
         sx={{
           '& .MuiDataGrid-root': {
