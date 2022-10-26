@@ -25,7 +25,7 @@ export const RootCmp = () => {
               <Route path="/team" element={<TeamPage />} />
               <Route path="/contacts" element={<ContactPage />} />
               <Route path="/invoices" element={<InvoicesPage />} />
-              <Route path="/form" element={<ProfilePage />} />
+              <Route path="/profile" element={<ProfilePage />} />
             </Routes>
           </main>
         </div>
