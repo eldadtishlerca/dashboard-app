@@ -1,4 +1,4 @@
-const teamData = [
+export const teamData = [
   {
     id: 101,
     name: 'Monkey D Luffy',
@@ -226,4 +226,49 @@ const teamData = [
   },
 ]
 
-export default teamData
+export const salesData = [
+  {
+    country: 'IL',
+    basic: 250,
+    basicColor: 'hsl(229, 70%, 50%)',
+    standard: 194,
+    standardColor: 'hsl(296, 70%, 50%)',
+    plus: 389,
+    plusColor: 'hsl(97, 70%, 50%)',
+    premium: 212,
+    premiumColor: 'hsl(340, 70%, 50%)',
+  },
+  {
+    country: 'UK',
+    basic: 110,
+    basicColor: 'hsl(229, 70%, 50%)',
+    standard: 345,
+    standardColor: 'hsl(296, 70%, 50%)',
+    plus: 130,
+    plusColor: 'hsl(97, 70%, 50%)',
+    premium: 90,
+    premiumColor: 'hsl(340, 70%, 50%)',
+  },
+  {
+    country: 'US',
+    basic: 174,
+    basicColor: 'hsl(229, 70%, 50%)',
+    standard: 321,
+    standardColor: 'hsl(296, 70%, 50%)',
+    plus: 127,
+    plusColor: 'hsl(97, 70%, 50%)',
+    premium: 225,
+    premiumColor: 'hsl(340, 70%, 50%)',
+  },
+  {
+    country: 'CA',
+    basic: 174,
+    basicColor: 'hsl(229, 70%, 50%)',
+    standard: 241,
+    standardColor: 'hsl(296, 70%, 50%)',
+    plus: 147,
+    plusColor: 'hsl(97, 70%, 50%)',
+    premium: 256,
+    premiumColor: 'hsl(340, 70%, 50%)',
+  },
+]

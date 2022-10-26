@@ -10,6 +10,7 @@ import { InvoicesPage } from './pages/invoices-page'
 import { ProfilePage } from './pages/profile-page'
 import { CalendarPage } from './pages/calendar-page'
 import { FaqPage } from './pages/faq-page'
+import { BarChartPage } from './pages/bar-chart-page'
 
 export const RootCmp = () => {
   const [theme, colorMode] = useMode()
@@ -30,6 +31,7 @@ export const RootCmp = () => {
               <Route path="/profile" element={<ProfilePage />} />
               <Route path="/calendar" element={<CalendarPage />} />
               <Route path="/faq" element={<FaqPage />} />
+              <Route path="/bar" element={<BarChartPage />} />
             </Routes>
           </main>
         </div>

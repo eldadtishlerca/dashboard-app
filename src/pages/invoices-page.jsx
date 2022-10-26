@@ -2,7 +2,7 @@ import { Box, Typography, useTheme } from '@mui/material'
 import { DataGrid } from '@mui/x-data-grid'
 import { tokens } from '../theme'
 import { Header } from '../cmps/Header'
-import teamData from '../data/data'
+import { teamData } from '../data/data'
 
 export const InvoicesPage = () => {
   const theme = useTheme()
