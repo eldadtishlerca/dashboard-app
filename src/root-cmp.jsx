@@ -8,6 +8,7 @@ import { TeamPage } from './pages/team-page'
 import { ContactPage } from './pages/contact-page'
 import { InvoicesPage } from './pages/invoices-page'
 import { ProfilePage } from './pages/profile-page'
+import { CalendarPage } from './pages/calendar-page'
 
 export const RootCmp = () => {
   const [theme, colorMode] = useMode()
@@ -26,6 +27,7 @@ export const RootCmp = () => {
               <Route path="/contacts" element={<ContactPage />} />
               <Route path="/invoices" element={<InvoicesPage />} />
               <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/calendar" element={<CalendarPage />} />
             </Routes>
           </main>
         </div>
