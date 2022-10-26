@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import { TeamPage } from './pages/team-page'
 import { ContactPage } from './pages/contact-page'
 import { InvoicesPage } from './pages/invoices-page'
+import { ProfilePage } from './pages/profile-page'
 
 export const RootCmp = () => {
   const [theme, colorMode] = useMode()
@@ -24,6 +25,7 @@ export const RootCmp = () => {
               <Route path="/team" element={<TeamPage />} />
               <Route path="/contacts" element={<ContactPage />} />
               <Route path="/invoices" element={<InvoicesPage />} />
+              <Route path="/form" element={<ProfilePage />} />
             </Routes>
           </main>
         </div>
