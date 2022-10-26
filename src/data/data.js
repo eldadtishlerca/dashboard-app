@@ -299,3 +299,66 @@ export const pieData = [
     color: 'hsl(229, 70%, 50%)',
   },
 ]
+
+export const buyersData = [
+  {
+    id: '569-71',
+    name: 'Shelton L. Mendenhall',
+    pack: 'Premium',
+    date: 'Oct 26, 2022',
+  },
+  {
+    id: '220-50',
+    name: 'James B. Greenlaw',
+    pack: 'Plus',
+    date: 'Oct 26, 2022',
+  },
+  {
+    id: '624-94',
+    name: 'Blanca B. Forman',
+    pack: 'Basic',
+    date: 'Oct 25, 2022',
+  },
+  {
+    id: '674-05',
+    name: 'Jennifer J. Nave',
+    pack: 'Premium',
+    date: 'Oct 24, 2022',
+  },
+  {
+    id: '493-32',
+    name: 'SKatherine M. McKinney',
+    pack: 'Plus',
+    date: 'Oct 22, 2022',
+  },
+  {
+    id: '215-37',
+    name: 'Linda S. Mitchell',
+    pack: 'Standard',
+    date: 'Oct 20, 2022',
+  },
+  {
+    id: '520-10',
+    name: 'Iris J. Bonk',
+    pack: 'Basic',
+    date: 'Oct 18, 2022',
+  },
+  {
+    id: '651-20',
+    name: 'Florence G. Price',
+    pack: 'Plus',
+    date: 'Oct 16, 2022',
+  },
+  {
+    id: '350-94',
+    name: 'Barbara E. Norton',
+    pack: 'Premium',
+    date: 'Oct 15, 2022',
+  },
+  {
+    id: '232-41',
+    name: 'Norman J. Gosnell',
+    pack: 'Premium',
+    date: 'Oct 10, 2022',
+  },
+]

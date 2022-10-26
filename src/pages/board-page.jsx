@@ -1,4 +1,4 @@
-import { Box, Button, useTheme } from '@mui/material'
+import { Box, Button, Typography, useTheme } from '@mui/material'
 import { DownloadOutlined } from '@mui/icons-material'
 import PersonAddIcon from '@mui/icons-material/PersonAdd'
 import AddReactionIcon from '@mui/icons-material/AddReaction'
@@ -6,7 +6,10 @@ import AnalyticsIcon from '@mui/icons-material/Analytics'
 import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt'
 import { Header } from '../cmps/Header'
 import { StatBox } from '../cmps/StatBox'
+import { BarHelper } from '../cmps/BarHelper'
 import { tokens } from '../theme'
+import { buyersData } from '../data/data'
+import { Progress } from '../cmps/Progress'
 
 export const BoardPage = () => {
   const theme = useTheme()
@@ -114,6 +117,98 @@ export const BoardPage = () => {
               />
             }
           />
+        </Box>
+        <Box
+          gridColumn="span 8"
+          gridRow="span 4"
+          background={colors.primary[400]}
+          overflow="auto"
+        >
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            borderBottom={`4px solid ${colors.primary[500]}`}
+            colors={colors.grayC[100]}
+            p="15px"
+          >
+            <Typography
+              color={colors.grayC[100]}
+              variant="h5"
+              fontWeight="bold"
+            >
+              Recent Buyers
+            </Typography>
+          </Box>
+          {buyersData.map((i, idx) => (
+            <Box
+              key={idx}
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              p="15px"
+            >
+              <Box sx={{ minWidth: '40%' }}>
+                <Typography
+                  color={colors.greenC[500]}
+                  variant="h5"
+                  fontWeight="bold"
+                >
+                  {i.id}
+                </Typography>
+                <Typography color={colors.grayC[100]}>{i.name}</Typography>
+              </Box>
+              <Box
+                sx={{
+                  minWidth: '40%',
+                  fontWeight: 'bold',
+                  color: colors.greenC[400],
+                }}
+              >
+                {i.pack}
+              </Box>
+              <Box color={colors.grayC[100]}>{i.date}</Box>
+            </Box>
+          ))}
+        </Box>
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          background={colors.primary[400]}
+          p="30px"
+        >
+          <Typography variant="h5" fontWeight="bold">
+            Sales Quantity
+          </Typography>
+          <Box height="250px" mt="-20px">
+            <BarHelper isDashboard={true} />
+          </Box>
+        </Box>
+        <Box
+          gridColumn="span 4"
+          gridRow="span 2"
+          background={colors.primary[400]}
+          p="30px"
+        >
+          <Typography variant="h5" fontWeight="bold">
+            Campaign Revenue
+          </Typography>
+          <Box
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mt="30px"
+          >
+            <Progress size="125" />
+            <Typography
+              variant="h5"
+              fontWeight="bold"
+              color={colors.greenC[500]}
+              mt="15px"
+            >
+              Total: $380,105
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
