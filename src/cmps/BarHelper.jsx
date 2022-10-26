@@ -1,7 +1,7 @@
 import { useTheme } from '@mui/material'
 import { ResponsiveBar } from '@nivo/bar'
 import { tokens } from '../theme'
-import { salesData as data } from '../data/data'
+import { barData as data } from '../data/data'
 
 export const BarHelper = ({ isDashboard = false }) => {
   const theme = useTheme()

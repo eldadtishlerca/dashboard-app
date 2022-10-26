@@ -11,6 +11,7 @@ import { ProfilePage } from './pages/profile-page'
 import { CalendarPage } from './pages/calendar-page'
 import { FaqPage } from './pages/faq-page'
 import { BarChartPage } from './pages/bar-chart-page'
+import { PieChartPage } from './pages/pie-chart-page'
 
 export const RootCmp = () => {
   const [theme, colorMode] = useMode()
@@ -32,6 +33,7 @@ export const RootCmp = () => {
               <Route path="/calendar" element={<CalendarPage />} />
               <Route path="/faq" element={<FaqPage />} />
               <Route path="/bar" element={<BarChartPage />} />
+              <Route path="/pie" element={<PieChartPage />} />
             </Routes>
           </main>
         </div>

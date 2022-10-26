@@ -226,7 +226,7 @@ export const teamData = [
   },
 ]
 
-export const salesData = [
+export const barData = [
   {
     country: 'IL',
     basic: 250,
@@ -262,13 +262,40 @@ export const salesData = [
   },
   {
     country: 'CA',
-    basic: 174,
+    basic: 132,
     basicColor: 'hsl(229, 70%, 50%)',
     standard: 241,
     standardColor: 'hsl(296, 70%, 50%)',
     plus: 147,
     plusColor: 'hsl(97, 70%, 50%)',
-    premium: 256,
+    premium: 258,
     premiumColor: 'hsl(340, 70%, 50%)',
+  },
+]
+
+export const pieData = [
+  {
+    id: 'basic',
+    label: 'basic',
+    value: '666',
+    color: 'hsl(104, 70%, 50%)',
+  },
+  {
+    id: 'standard',
+    label: 'standard',
+    value: '1101',
+    color: 'hsl(162, 70%, 50%)',
+  },
+  {
+    id: 'plus',
+    label: 'plus',
+    value: '793',
+    color: 'hsl(291, 70%, 50%)',
+  },
+  {
+    id: 'premium',
+    label: 'premium',
+    value: '785',
+    color: 'hsl(229, 70%, 50%)',
   },
 ]
