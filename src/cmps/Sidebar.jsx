@@ -170,7 +170,7 @@ export const Sidebar = () => {
             />
             <Item
               title="FAQ"
-              to="/"
+              to="/faq"
               icon={<HelpOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -183,28 +183,28 @@ export const Sidebar = () => {
             </Typography>
             <Item
               title="Bar Chart"
-              to="/"
+              to="/bar"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Pie Chart"
-              to="/"
+              to="/pie"
               icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Line Chart"
-              to="/"
+              to="/line"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Geography Chart"
-              to="/"
+              to="/geo"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
